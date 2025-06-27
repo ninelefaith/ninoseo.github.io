@@ -1,0 +1,141 @@
+/* ======= GLOBAL STYLES ======= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #ddd;
+}
+
+/* ======= HERO SECTION ======= */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.hero h2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding: 14px 26px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #d4af37;
+  color: #000;
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.6);
+}
+
+/* ======= SERVICES SECTION ======= */
+.services {
+  background-color: #1a1a1a;
+  padding: 80px 20px;
+  text-align: center;
+  color: #eee;
+}
+
+.services h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: #f8f8f8;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 300px;
+  flex: 1 1 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.service h3 {
+  color: #d4af37;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .whatsapp-btn {
+    flex-direction: column;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .whatsapp-btn img {
+    width: 18px;
+    height: 18px;
+  }
+}
